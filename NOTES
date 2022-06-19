@@ -52,3 +52,13 @@
 - "NewQuote.js"
   => Added Quote Form
   => import "QuoteForm.js" to rended quote form, & pass "addQuoteHandler()" to <QuoteForm>
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 6 Outputting Data on "Details Page"
+
+- "QuoteItem.js"
+  => used { Link } to handle "View Fullscreen" button <Link className="btn" to={`/quotes/${props.id}`}>
+
+- "QuoteDetail.js"
+  => Added DUMMY_DATA, Find quote by Id, return if (!id)

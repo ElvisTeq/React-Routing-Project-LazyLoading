@@ -5,6 +5,7 @@ const DUMMY_QUOTES = [
   { id: "q2", author: "Kaheno", text: "Will Learn React" },
 ];
 
+// Passing quote data
 const AllQuotes = () => {
   return <QuoteList quotes={DUMMY_QUOTES} />;
 };
