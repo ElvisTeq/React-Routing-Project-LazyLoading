@@ -40,3 +40,15 @@
 
 - "Layout.js"
   => Layoput Module to wrapp around "App.js" JSX
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 5 Adding Dummy Data & More Content
+
+- "AllQuotes.js"
+  => Added "DUMMY_QUOTES"
+  => imported "QuoteList.js" To display Data
+
+- "NewQuote.js"
+  => Added Quote Form
+  => import "QuoteForm.js" to rended quote form, & pass "addQuoteHandler()" to <QuoteForm>
