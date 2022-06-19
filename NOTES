@@ -62,3 +62,14 @@
 
 - "QuoteDetail.js"
   => Added DUMMY_DATA, Find quote by Id, return if (!id)
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 7 Adding a "Not Found" Page
+
+- "NotFound.js"
+  => Route module created
+
+- "App.js"
+  => using { Route } to display "Not Found" Page
+  => <Route path="*"> (any other page)
