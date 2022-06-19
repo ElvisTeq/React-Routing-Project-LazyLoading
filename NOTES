@@ -1,0 +1,26 @@
+## 1 Creating/Linking Route
+
+- "App.js"
+  => Implemented { Route, Switch } Created Routes
+
+- Crated Route Components
+  => "AllQuote.js"
+  => "NewQuote.js"
+  => "QuoteDetail.js"
+
+- "index.js"
+  => { BrowserRouter } to Connect/Activate Routes of "App.js"
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 2 Redirecting Route, Extracting Params
+
+- "App.js"
+  => implemented { Redirect } to redirect default/main page
+
+- "QuoteDetail.js"
+  => implemented { useParams } to Extract Params from "Route URL"
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 3 Nesting Routes
