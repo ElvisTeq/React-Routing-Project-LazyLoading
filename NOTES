@@ -29,3 +29,14 @@
   => { Route } to add nested <Route path={`/quotes/${params.quoteId}/comments`}>
   => Using `${Template Literal}` to add params + aditional /Route to the URL
   => Or Alternative => <Route path="/quotes/:quoteId/comments">
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 4 Adding a Layout Wrapper Component
+
+- "MainNavigation.js"
+  => Navigation Bar
+  => { NavLink } to create links for the Routes
+
+- "Layout.js"
+  => Layoput Module to wrapp around "App.js" JSX
