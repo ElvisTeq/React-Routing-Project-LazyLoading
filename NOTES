@@ -73,3 +73,16 @@
 - "App.js"
   => using { Route } to display "Not Found" Page
   => <Route path="*"> (any other page)
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 8 Implementing Programmatic (Imperative) Navigation
+
+- "NewQuote.js"
+  => implemented { useHistory } to navigate route back/away on "Submit"
+
+--------------------------------------------------------- import { useHistory } from "react-router-dom";
+to navigate away on "event"
+
+- ".push" => erases history and creates a new Route with changes (No go back button)
+- ".replace" => replace history Route with changes (Can use go back button)
