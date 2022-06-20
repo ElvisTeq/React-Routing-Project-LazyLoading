@@ -98,3 +98,17 @@ to navigate away on "event"
 --------------------------------------------------------- import { Prompt } from "react-router-dom";
 to alert/prompt message
 <Prompt when={true/false} message(() => 'MessageHere') />
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 10 Working with Query Parameters
+
+- "QuoteList.js"
+  => using { useHistory } to add query params in URL '?sort='
+  => using { useLocation } to get router data then (extract query param)
+
+--------------------------------------------------------- import { useLocation } from "react-router-dom";
+Get Router Data/Details
+
+--------------------------------------------------------- new URLSearchParams()
+Get Params (JS Method)
