@@ -86,3 +86,15 @@ to navigate away on "event"
 
 - ".push" => erases history and creates a new Route with changes (No go back button)
 - ".replace" => replace history Route with changes (Can use go back button)
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 9 Preventing Unwanted Route Transitions with "propt" Component
+
+- "QuoteForm.js"
+  => Implemented { Prompt } to show prompt/message when form losses focus "onFocus={}"
+  => { useState } to toggle { Prompt }
+
+--------------------------------------------------------- import { Prompt } from "react-router-dom";
+to alert/prompt message
+<Prompt when={true/false} message(() => 'MessageHere') />
