@@ -108,7 +108,7 @@ to alert/prompt message
   => using { useLocation } to get router data then (extract query param)
 
 --------------------------------------------------------- import { useLocation } from "react-router-dom";
-Get Router Data/Details
+Get current Router Data/Details
 
 --------------------------------------------------------- new URLSearchParams()
 Get Params (JS Method)
@@ -120,3 +120,17 @@ Get Params (JS Method)
 - "QuoteDetail.js"
   => Nesting a { Link } inside a { Route } for the comments
   => <Route path={`/quotes/${params.quoteId}`} exact> <Link to={`/quotes/${params.quoteId}/comments`} /> </Route>
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 12 Writting Frexible Routing Code
+
+- "QuoteDetail.js"
+  => added { useRouteMatch } to get "URL from data" to avoid hard coding Routes
+
+- "QuoteList.js"
+  => using { useLocation } to replace hard coding routes
+  => using alternative way ".push({ pathname:, search: })"
+
+---------------------------------------------------------- import { useRouteMatch } from "react-router-dom";
+Get Total Router/URL DATA

@@ -17,7 +17,7 @@ const sortQuotes = (quotes, ascending) => {
 
 const QuoteList = (props) => {
   const history = useHistory(); // Make Changes to URL
-  const location = useLocation(); // Get Router data/details
+  const location = useLocation(); // Get current Router data/details
 
   const queryParams = new URLSearchParams(location.search); // Get Params "?anyThing"
 
@@ -26,7 +26,17 @@ const QuoteList = (props) => {
   const sortedQuotes = sortQuotes(props.quotes, isSortingAscending);
 
   const changeSortingHandler = () => {
-    history.push("/quotes?sort=" + (isSortingAscending ? "disc" : "asc"));
+    // ${location.pathname} => "/quotes"
+
+    // // Alternative way
+    // history.push(
+    //   `${location.pathname}?sort=${isSortingAscending ? "desc" : "asc"}`
+    // );
+
+    history.push({
+      pathname: location.pathname,
+      search: `?sort=${isSortingAscending ? "desc" : "asc"}`,
+    });
   };
 
   return (
