@@ -112,3 +112,11 @@ Get Router Data/Details
 
 --------------------------------------------------------- new URLSearchParams()
 Get Params (JS Method)
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 11 Getting Creative with Nesting Routes
+
+- "QuoteDetail.js"
+  => Nesting a { Link } inside a { Route } for the comments
+  => <Route path={`/quotes/${params.quoteId}`} exact> <Link to={`/quotes/${params.quoteId}/comments`} /> </Route>
