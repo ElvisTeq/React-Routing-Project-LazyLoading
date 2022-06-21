@@ -134,3 +134,26 @@ Get Params (JS Method)
 
 ---------------------------------------------------------- import { useRouteMatch } from "react-router-dom";
 Get Total Router/URL DATA
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 13 Sending & Getting Quote Data via HTTP
+
+- Added
+  => "./hooks/use-http.js" => (Custom Hook) contain Reducers
+  => "./lib/api.js" => (API Functionality for FIREBASE)
+
+- "NewQuote.js"
+  => Added/Implemented Custom Hook & API request
+  => Sending & Storing Data to API
+
+- "AllQuotes.js"
+  => Added/Implemented Custom Hook & API request (To get All Data)
+  => Handling Loading Spinner/ErrorMessage based on API request Status
+
+- "NoQuotesFound.js"
+  => { Link } To redirect to Quote Form Route Component
+
+- "QuoteDetail.js"
+  => Using Custom Hook, API Request Component (To get quote details)
+  => Hanbdling Status from Custom Hook
