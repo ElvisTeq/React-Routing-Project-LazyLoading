@@ -157,3 +157,19 @@ Get Total Router/URL DATA
 - "QuoteDetail.js"
   => Using Custom Hook, API Request Component (To get quote details)
   => Hanbdling Status from Custom Hook
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+## 14 Adding the "Comments" Features
+
+- "NewCommentForm.js"
+  => Implemented "Comments" feature with our "API Component & Custom Hook"
+  => { useRef } to get Commend data from JSX and sent to API
+  => { useEffect } to do something else after "successfully" API request
+
+- "Comments.js"
+  => Using "API Component & Custom Hook" to get all Comments
+  => { useParams } To get "quoteId"
+  => Created Function for "NewCommentForm.js" on "Success" API request
+
+////////////////////////////////////////////////////////////////////////////////////////////
