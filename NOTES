@@ -173,3 +173,16 @@ Get Total Router/URL DATA
   => Created Function for "NewCommentForm.js" on "Success" API request
 
 ////////////////////////////////////////////////////////////////////////////////////////////
+
+## 15 Lazy Loading (Loading code only when is needed)
+
+- "App.js"
+  => Implemented "React.lazy()" (To import Component that will only load when is called)
+  => { Suspense } To connect "React.lazy()" component to the JSX
+  => <Suspense fallback={}> => What to do/show before finish loading
+
+------------------------------------------------ React.lazy(() => import("./componentLocation"))
+To import a component that will only starts to load when is Called
+
+------------------------------------------------ { Suspense }
+To Connect "React.lazy()" to the JSX
